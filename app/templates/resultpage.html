@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Result</h1>
+
+<form action="" method="post" name="">
+    {{ resultform.hidden_tag() }}
+     
+    <h2>The sum is {{ sum }}</h2>
+    
+    <h3>Inputted numbers</h3>			  			   
+       First number  : {{ number1 }}<br>       
+       Second number : {{ number2 }}<br>       
+       <br>       
+	   <br> 
+	   {{ resultform.Submit2 }}
+</form>
+
+{% endblock %}

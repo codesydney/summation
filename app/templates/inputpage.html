@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Addition of two numbers</h1>	
+
+<div style="font-size:15px;text-align:left;color:red">
+      {% for message in inputform.Number1.errors %}
+         <div>{{ message }}</div>
+      {% endfor %}
+
+	  {% for message in inputform.Number2.errors %}
+         <div">{{ message }}</div>
+      {% endfor %}
+</div> 	  
+	    
+<form action="" method="post" name="">
+    {{ inputform.hidden_tag() }}
+    
+    <h2>Enter two numbers</h2>			  			   
+   	   {{ inputform.Number1.label }}<br>
+       {{ inputform.Number1 }}<br>
+       <br>  
+       
+       {{ inputform.Number2.label }}<br>
+       {{ inputform.Number2 }}<br>
+       <br>
+       
+	   <br> 
+	   {{ inputform.Submit1 }}
+</form>
+
+{% endblock %}
