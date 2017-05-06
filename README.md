@@ -1,2 +1,2 @@
 # summation
-A small Flask application to be used for GitHub training.
+A small flask application to be used for GitHub training.
