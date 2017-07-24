@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\summation\flask"
+set "VIRTUAL_ENV=C:\Users\Rafilkis\AppData\Local\GitHubDesktop\Repository\summation\flask"
 
 if not defined PROMPT (
     set "PROMPT=$P$G"
